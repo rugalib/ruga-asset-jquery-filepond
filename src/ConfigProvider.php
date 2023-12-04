@@ -6,7 +6,7 @@
 
 declare(strict_types=1);
 
-namespace Ruga\Asset\Skeleton;
+namespace Ruga\Asset\jquery_filepond;
 
 /**
  * ConfigProvider.
@@ -20,8 +20,8 @@ class ConfigProvider
         return [
             'ruga' => [
                 'asset' => [
-                    'rugalib/ruga-asset-skeleton' => [
-                        'scripts' => [],
+                    'rugalib/ruga-asset-jquery-filepond' => [
+                        'scripts' => ['filepond.jquery.js'],
                         'stylesheets' => [],
                     ],
                 ],

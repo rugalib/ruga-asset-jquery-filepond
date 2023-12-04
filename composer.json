@@ -1,11 +1,13 @@
 {
-  "name": "rugalib/ruga-asset-skeleton",
-  "description": "Template for rugalib assets",
+  "name": "rugalib/ruga-asset-jquery-filepond",
+  "description": "jQuery plugin for the filepond library",
   "license": "AGPL-3.0-only",
   "homepage": "https://github.com/rugalib",
   "type": "library",
   "require": {
-    "php": "^7.4|^8.0|^8.1|^8.2"
+    "php": "^7.4|^8.0|^8.1|^8.2",
+    "rugalib/asset-jquery": "^3.5",
+    "rugalib/asset-filepond": "^4.28"
   },
   "repositories": [
     {
@@ -15,19 +17,23 @@
   ],
   "authors": [
     {
+      "name": "PQINA",
+      "homepage": "https://pqina.nl"
+    },
+    {
       "name": "Roland Rusch",
       "email": "roland.rusch@easy-smart.ch"
     }
   ],
   "autoload": {
     "psr-4": {
-      "Ruga\\Asset\\Skeleton\\": "src/"
+      "Ruga\\Asset\\jquery_filepond\\": "src/"
     }
   },
   "extra": {
     "laminas": {
-      "component": "Ruga\\Asset\\Skeleton",
-      "config-provider": "Ruga\\Asset\\Skeleton\\ConfigProvider"
+      "component": "Ruga\\Asset\\jquery_filepond",
+      "config-provider": "Ruga\\Asset\\jquery_filepond\\ConfigProvider"
     }
   }
 }
