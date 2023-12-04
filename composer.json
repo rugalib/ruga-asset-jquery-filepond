@@ -1,0 +1,33 @@
+{
+  "name": "rugalib/ruga-asset-skeleton",
+  "description": "Template for rugalib assets",
+  "license": "AGPL-3.0-only",
+  "homepage": "https://github.com/rugalib",
+  "type": "library",
+  "require": {
+    "php": "^7.4|^8.0|^8.1|^8.2"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://packages.rugalib.ch/"
+    }
+  ],
+  "authors": [
+    {
+      "name": "Roland Rusch",
+      "email": "roland.rusch@easy-smart.ch"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Ruga\\Asset\\Skeleton\\": "src/"
+    }
+  },
+  "extra": {
+    "laminas": {
+      "component": "Ruga\\Asset\\Skeleton",
+      "config-provider": "Ruga\\Asset\\Skeleton\\ConfigProvider"
+    }
+  }
+}
